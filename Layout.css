@@ -1,0 +1,27 @@
+/* Layout specific styles */
+.sidebar-transition {
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-item-active {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+}
+
+.nav-item-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-item-hover:hover {
+  transform: translateX(4px);
+}
+
+.logo-glow {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.mobile-menu-overlay {
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.1);
+}
+

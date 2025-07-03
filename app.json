@@ -1,0 +1,93 @@
+{
+  "expo": {
+    "name": "SubZero - Subscription Manager",
+    "slug": "subzero-subscription-manager",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#3B82F6"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.subzero.subscriptionmanager",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan subscription receipts and documents for automatic subscription detection.",
+        "NSPhotoLibraryUsageDescription": "This app accesses your photo library to import subscription receipts and documents for automatic subscription detection.",
+        "NSFaceIDUsageDescription": "This app uses Face ID for secure authentication and to protect your subscription data.",
+        "NSUserNotificationsUsageDescription": "This app sends notifications to remind you about upcoming bills and subscription renewals."
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#3B82F6"
+      },
+      "package": "com.subzero.subscriptionmanager",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.WAKE_LOCK"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-notifications",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": false
+          },
+          "android": {
+            "newArchEnabled": false
+          }
+        }
+      ]
+    ],
+    "scheme": "subzero",
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      }
+    },
+    "owner": "your-expo-username",
+    "privacy": "public",
+    "description": "SubZero is the ultimate subscription management app that helps you track, manage, and optimize your recurring subscriptions. Discover hidden subscriptions through bank account and email integration, get smart bill reminders, and take control of your subscription spending.",
+    "keywords": [
+      "subscription",
+      "management",
+      "bills",
+      "finance",
+      "budget",
+      "recurring",
+      "payments",
+      "tracker",
+      "money",
+      "savings"
+    ],
+    "category": "finance",
+    "githubUrl": "https://github.com/yourusername/subzero-app"
+  }
+}
+
